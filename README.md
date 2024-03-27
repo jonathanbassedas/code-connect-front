@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Structure
+
+The project is structured as follows: 
+
+     src: source code of the project
+         app: main components of the application
+             components: components of the application
+                 theme-selector: theme switcher component
+         themes: theme files
+             theme.dark.scss: dark theme file
+             theme.light.scss: light theme file
+             theme.service.ts: service to switch between themes
+
+## Features
+
+- PrimeNG components: use of PrimeNG components
+- PrimeFlex: use of PrimeFlex for layout
+- Theme switcher: switch between light and dark themes

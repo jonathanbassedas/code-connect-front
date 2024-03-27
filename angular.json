@@ -25,7 +25,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/primeng/resources/primeng.min.css",
+              "./node_modules/primeflex/primeflex.css",
+              {
+                "input": "src/themes/theme.light.scss",
+                "bundleName": "lara-light",
+                "inject": false
+              },
+              {
+                "input": "src/themes/theme.dark.scss",
+                "bundleName": "lara-dark",
+                "inject": false
+              }
             ],
             "scripts": []
           },
@@ -91,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6d105207-eb75-43d2-a0a5-a2b7d1680279"
   }
 }
