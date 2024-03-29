@@ -1,14 +1,59 @@
 <div class="container">
-    <p>Página principal</p>
+  <p>Página principal</p>
 </div>
 
 <div class="card flex justify-content-center mt-3 gap-3">
-  <p-button (click)="showDialog()" icon="pi pi-external-link" label="Show"></p-button>
+  <p-button
+    (click)="showDialog()"
+    icon="pi pi-external-link"
+    label="Show"
+  ></p-button>
   <app-theme-selector></app-theme-selector>
-  <p-dialog header="Header" [(visible)]="visible" [breakpoints]="{ '960px': '75vw' }" [style]="{width: '50vw'}" [draggable]="false" [resizable]="false" [modal]="true">
+  <p-dialog
+    header="Header"
+    [(visible)]="visible"
+    [breakpoints]="{ '960px': '75vw' }"
+    [style]="{ width: '50vw' }"
+    [draggable]="false"
+    [resizable]="false"
+    [modal]="true"
+  >
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
     </p>
   </p-dialog>
+</div>
+<div class="card">
+  <p-dataView #dv [value]="codigos" [rows]="3" [paginator]="true">
+    <ng-template let-codigo pTemplate="list">
+      <div class="grid grid-nogutter">
+        <div class="col-5" *ngFor="let item of codigos; let first = first">
+          <div
+            class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4"
+          >
+            <p-card
+              header="{{ item.name }}"
+              [style]="{ width: '360px', height: '360px' }"
+            >
+              <p>{{ item.date }}</p>
+              <ng-template pTemplate="header">
+                <img
+                  alt="{{ item.name }}"
+                  src="{{ item.image }}"
+                  [style]="{ height: '150px' }"
+                />
+              </ng-template>
+              <p>{{ item.description }}</p>
+            </p-card>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-dataView>
 </div>
