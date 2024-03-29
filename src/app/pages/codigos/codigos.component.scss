@@ -1,4 +1,39 @@
-
 .container {
-    margin-top: 2em;
+  margin-top: 2em;
+}
+
+.date {
+  top: -55px;
+  left: 18rem;
+  font-size: 0.9rem;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 0.95rem;
+  position: relative;
+  top: -20px;
+}
+
+.image {
+  position: relative;
+  height: 270px;
+  background-color: transparent;
+  border-radius: 0px 9px 0 0 !important;
+}
+.image::before {
+  content: "" !important;
+  position: absolute !important;
+
+  background-color: transparent !important;
+  bottom: -60px !important;
+  height: 50px !important;
+  width: 100% !important;
+  right: 0;
+  border-top-right-radius: 17px !important;
+  border-top-left-radius: 17px !important;
+  box-shadow: 0 -25px 0px 0 var(--surface-card) !important;
 }

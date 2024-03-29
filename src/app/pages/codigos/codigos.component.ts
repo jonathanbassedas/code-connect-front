@@ -7,6 +7,7 @@ import { DialogModule } from "primeng/dialog";
 import { DataViewModule } from 'primeng/dataview';
 import { CardModule } from 'primeng/card';
 import { ThemeSelectorComponent } from "../../components/theme-selector/theme-selector.component";
+import { CodigosHome } from '../../interfaces/codigos';
 
 @Component({
   selector: 'app-codigos',
@@ -23,7 +24,7 @@ import { ThemeSelectorComponent } from "../../components/theme-selector/theme-se
   styleUrl: './codigos.component.scss'
 })
 export class CodigosComponent {
-  codigos: any = []
+  codigos: CodigosHome[] = [];
   visible: boolean = false; // variable para el dialog, prueba de primeNg
 
   constructor(private codigoService: CodigoService, private router: Router) {
@@ -85,7 +86,7 @@ export class CodigosComponent {
     }, {
       "id": 10,
       "name": "Roseline",
-      "description": "Dilation of Left Hand Artery with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach",
+      "description": "Dilation of Left Hand Artery with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach Dilation of Left Hand Artery with Four or More Drug-eluting Intraluminal Devices, Percutaneous Endoscopic Approach",
       "image": "http://dummyimage.com/117x100.png/ff4444/ffffff",
       "date": "7/13/2023"
     }]

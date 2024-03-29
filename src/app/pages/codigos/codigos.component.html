@@ -33,23 +33,36 @@
   <p-dataView #dv [value]="codigos" [rows]="3" [paginator]="true">
     <ng-template let-codigo pTemplate="list">
       <div class="grid grid-nogutter">
-        <div class="col-5" *ngFor="let item of codigos; let first = first">
+        <div
+          class="xl:col-6 sm:col-12 md:col-12 lg:col-6 justify-content-center gap-3 p-3 flex flex-row"
+          *ngFor="let item of codigos; let first = first"
+        >
           <div
             class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4"
           >
             <p-card
               header="{{ item.name }}"
-              [style]="{ width: '360px', height: '360px' }"
+              [style]="{ width: '400px', height: '450px' }"
+              class="border-round-2xl"
             >
-              <p>{{ item.date }}</p>
               <ng-template pTemplate="header">
-                <img
-                  alt="{{ item.name }}"
-                  src="{{ item.image }}"
-                  [style]="{ height: '150px' }"
-                />
+                <div class="image">
+                  <img
+                    alt="{{ item.name }}"
+                    src="{{ item.image }}"
+                    [style]="{ height: '270px' }"
+                    class="border-round-top-lg"
+                  />
+                </div>
               </ng-template>
-              <p>{{ item.description }}</p>
+              <div class="absolute">
+                <span class="absolute">
+                  <span class="absolute date">
+                    {{ item.date }}
+                  </span>
+                </span>
+              </div>
+              <p class="description">{{ item.description }}</p>
             </p-card>
           </div>
         </div>
