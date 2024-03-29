@@ -8,14 +8,28 @@
   font-size: 0.9rem;
 }
 
+p-card {
+  width: 400px;
+  height: 450px;
+}
+
 .description {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   position: relative;
-  top: -20px;
+  top: -30px;
+  width: 360px;
+  height: 52px;
+  text-wrap: wrap;
+}
+
+.image {
+  img {
+    height: 270px;
+  }
 }
 
 .image {
@@ -36,4 +50,24 @@
   border-top-right-radius: 17px !important;
   border-top-left-radius: 17px !important;
   box-shadow: 0 -25px 0px 0 var(--surface-card) !important;
+}
+
+p-paginator {
+  padding-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .date {
+    top: -52px;
+    left: 11rem;
+    font-size: 0.9rem;
+  }
+  p-card {
+    width: 320px;
+    height: 450px;
+  }
+  .description {
+    width: 290px;
+    text-wrap: wrap;
+  }
 }

@@ -34,30 +34,28 @@
     <ng-template let-codigo pTemplate="list">
       <div class="grid grid-nogutter">
         <div
-          class="xl:col-6 sm:col-12 md:col-12 lg:col-6 justify-content-center gap-3 p-3 flex flex-row"
+          class="xl:col-6 sm:col-12 md:col-12 lg:col-6 justify-content-center gap-3 flex flex-row"
           *ngFor="let item of codigos; let first = first"
         >
           <div
-            class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4"
+            class="flex flex-column xl:flex-row xl:align-items-center p-4 pt-7 gap-6"
           >
             <p-card
               header="{{ item.name }}"
-              [style]="{ width: '400px', height: '450px' }"
-              class="border-round-2xl"
+              class="border-round-2xl sm:w-300px lg:w-400px xl:w-400px md:w-300px 3xl:w-400px 2xl:w-400px"
             >
               <ng-template pTemplate="header">
                 <div class="image">
                   <img
                     alt="{{ item.name }}"
                     src="{{ item.image }}"
-                    [style]="{ height: '270px' }"
                     class="border-round-top-lg"
                   />
                 </div>
               </ng-template>
               <div class="absolute">
                 <span class="absolute">
-                  <span class="absolute date">
+                  <span class="relative date">
                     {{ item.date }}
                   </span>
                 </span>
