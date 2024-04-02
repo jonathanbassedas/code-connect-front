@@ -1,4 +1,33 @@
 
 .container {
     margin-top: 2em;
+    
+}
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #182e41;
+}
+
+.cardDiv{
+    margin-top: 3em;
+    width: 15%;
+    margin-left: 4%;
+    min-width: 350px;
+}
+
+.card-content{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 100px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
