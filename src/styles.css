@@ -1,2 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
+
+
+body {    
+    background-image: url("./assets/images/background-claro.png");
+    background-color: #cccccc;
+}
+
+@font-face {
+    font-family: PressStart2P;
+    src: url(./assets/fonts/PressStart2P.ttf);
+  }
+
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+  }

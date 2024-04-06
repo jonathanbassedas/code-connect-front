@@ -1,4 +1,24 @@
-<nav class="navbar navbar-expand-lg navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s"
-    style="background-color: #e5e5e5;">
-        <h1 class="m-0 textoTitulo"><i class="far fa-hospital me-3"></i>Code Connect</h1>
-</nav>
+
+<div class="container-caja">
+    <div class="title">
+        <img height="50px" src="../../../assets/images/logo.png">
+
+    </div>
+
+    <div class="menu">
+
+        @for (item of items; track item) {
+            <div>
+                <label style="margin-top: 7px;" class="menu-element" [ngClass]="item.activated == true ? 'activated' : ''" (click)="navigate(item.routerLink)">{{item.label}}</label>
+
+            </div>
+
+        }
+
+        @if (login == true) {
+            <p-avatar class="avatar" image="./assets/images/avatar.png" styleClass="mr-2" size="xlarge" shape="circle"></p-avatar>
+        }
+        
+
+    </div>
+</div>
