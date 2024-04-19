@@ -1,7 +1,7 @@
 
 <div class="container-caja">
     <div class="title">
-        <img height="50px" src="../../../assets/images/logo.png">
+        <img height="30px" src="../../../assets/images/logo.png">
 
     </div>
 
@@ -16,7 +16,7 @@
         }
 
         @if (login == true) {
-            <p-avatar class="avatar" image="./assets/images/avatar.png" styleClass="mr-2" size="xlarge" shape="circle"></p-avatar>
+            <p-avatar class="avatar" image="./assets/images/avatar.png" styleClass="mr-2" size="large" shape="circle" (click)="navigate('/profile')"></p-avatar>
         }
 
 

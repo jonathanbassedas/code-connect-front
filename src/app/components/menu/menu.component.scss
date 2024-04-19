@@ -1,5 +1,5 @@
 .container-caja{
-    height: 80px;
+    height: 60px;
     border-radius: 35px;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     width: 60%;
     justify-content: flex-end;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     
 }
 
@@ -45,4 +45,5 @@
 
 .avatar{
     display: flex;
+    cursor: pointer;
 }

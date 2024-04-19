@@ -4,6 +4,19 @@
     
 }
 
+.contenedor{
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 2px 49px -12px rgba(0, 0, 0, 0.53);
+}
+
 .body{
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +27,8 @@
     width: 15%;
     margin-left: 4%;
     min-width: 350px;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
 }
 
 .card-content{
@@ -29,5 +44,6 @@
     height: 100px;
     overflow: hidden; 
     text-overflow: ellipsis;
+    font-size: 13px;
 }
 

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    --prussian-blue: #182E41;
+    --royal-blue: #0062EC;
+    --white: #FFFFFF;
+
+    /* color usado como fondo en la propuesta de figma por Pawi */
+    --light-blue: #C1DBEE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Press Start 2P';
+    font-size: 14px;
+
+}
+
+input, button { 
+    font-family: inherit;
+}
+
+.card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 60%;
+    background-color: var(--light-blue);
+    padding: 32px 22px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.card > h1 {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.card > p{
+    color: var(--prussian-blue);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card > input[type='email'] {
+    border: unset;
+    border-radius: 18px;
+    height: 32px;
+    font-size: 1.4rem;
+    padding: 14px 14px;
+
+
+    width: 80%;
+}
+
+.card > button {
+    border: unset;
+    background-color: var(--prussian-blue);
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 12px 36px;
+    border-radius: 12px;
+    margin: 24px 0
+
+}

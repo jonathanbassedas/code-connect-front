@@ -1,13 +1,16 @@
 
 <div class="body">
-  @for(codigo of codigos; track codigo){
-  <p-card header="{{codigo.palabraClave}}" subheader="{{codigo.lenguajes}}" class="cardDiv" 
-  [style]="{ height: '450px', padding: '1em', backgroundColor: '#e7e7e7' }">
-    <ng-template pTemplate="header">
-      <img alt="Card" src="{{codigo.rutaImagen}}" height="200px" style="object-fit: cover; border-radius: 10px;"/>
-    </ng-template>
-    <p class="card-content">
-      {{codigo.descripcion}}
-    </p>
-  </p-card>}
+  <div class="contenedor">
+    @for(codigo of codigos; track codigo){
+      <p-card header="{{codigo.palabraClave}}" subheader="{{codigo.lenguajes}}" class="cardDiv" 
+      [style]="{ height: '450px', padding: '1em', backgroundColor: '#e7e7e7' }">
+        <ng-template pTemplate="header">
+          <img alt="Card" src="{{codigo.rutaImagen}}" height="200px" style="object-fit: cover; border-radius: 10px;"/>
+        </ng-template>
+        <p class="card-content">
+          {{codigo.descripcion}}
+        </p>
+      </p-card>}
+  </div>
+  
 </div>
