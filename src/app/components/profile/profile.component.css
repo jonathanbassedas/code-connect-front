@@ -4,6 +4,7 @@
   margin-bottom: 3%;
   border-radius: 0.5rem;
   background: #fff;
+  box-shadow: 0px 2px 49px -12px rgba(0, 0, 0, 0.53);
 }
 .profile-img{
   display: flex;

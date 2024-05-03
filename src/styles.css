@@ -2,17 +2,18 @@
 @import "primeicons/primeicons.css";
 
 
-body {    
-    background-image: url("./assets/images/background-claro.png");
-    background-color: #cccccc;
+body {}
+
+@font-face {
+  font-family: PressStart2P;
+  src: url(./assets/fonts/PressStart2P.ttf);
 }
 
 @font-face {
-    font-family: PressStart2P;
-    src: url(./assets/fonts/PressStart2P.ttf);
-  }
+  font-family: SpaceGrotesk;
+  src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
 
-@font-face {
-    font-family: SpaceGrotesk;
-    src: url(./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
-  }
+button:focus, input:focus {
+  outline: none;
+}
